@@ -1,5 +1,19 @@
 # Customer Churn Classification
 
+## Interactive Streamlit app
+
+A companion application is available in [streamlit_app/app.py](streamlit_app/app.py).
+
+```bash
+python -m pip install -r streamlit_app/requirements.txt
+python -m streamlit run streamlit_app/app.py
+```
+
+This app fits a fresh random-forest baseline from the included dataset. Its evaluation is separate from prior notebook runs.
+
+See [DEPLOYMENT.md](DEPLOYMENT.md) for Community Cloud setup, validation coverage, and runtime requirements. A live deployment is not yet confirmed.
+
+
 A notebook comparing logistic regression, decision tree, and random forest classifiers on customer churn data.
 
 ## Why this project matters
