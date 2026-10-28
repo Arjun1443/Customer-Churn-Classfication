@@ -1,39 +1,39 @@
-# Customer-Churn-Classfication
-Customer Churn Prediction This project focuses on predicting customer churn using machine learning techniques. Customer churn refers to when a customer stops using a company's product or service. The goal is to build a model that can identify potential churners based on historical data and customer behavior.
+# Customer Churn Classification
 
-🔍 Project Overview
-The objective is to develop a predictive model that classifies customers into churn or non-churn categories based on various attributes such as usage patterns, subscription details, and customer interactions.
+A notebook comparing logistic regression, decision tree, and random forest classifiers on customer churn data.
 
-📊 Models Used
-Three machine learning models were implemented and compared:
+## Why this project matters
 
-Logistic Regression
-Decision Tree
-Random Forest
+Churn modeling illustrates how customer attributes can support retention analysis. A useful evaluation balances missed churners against unnecessary interventions.
 
-📌 Key Steps
-Data Preprocessing:
+## Technical focus
 
-Handled missing values.
-Encoded categorical variables.
-Normalized numerical features.
-Exploratory Data Analysis (EDA):
+Python · pandas · scikit-learn · categorical encoding · train/test splitting · model comparison
 
-Analyzed factors contributing to customer churn.
-Visualized churn rates across different customer segments.
-Model Training & Evaluation:
+## Explore the implementation
 
-Split the dataset into training and testing sets.
-Applied hyperparameter tuning for better performance.
-Evaluated models using accuracy, precision, recall, F1-score, and AUC-ROC.
+Open [the notebook](<Customer Churn Prediction.ipynb>) to inspect preprocessing, implementation, and saved outputs.
 
-📈 Results
-Logistic Regression: Provided baseline interpretability but limited predictive power.
-Decision Tree: Captured patterns well but prone to overfitting.
-Random Forest: Delivered the best performance with improved generalization.
+## Run locally
 
-🛠 Technologies Used
-Python
-Pandas, NumPy
-Scikit-Learn
-Matplotlib, Seaborn
+```bash
+git clone https://github.com/Arjun1443/Customer-Churn-Classfication.git
+cd Customer-Churn-Classfication
+python -m venv .venv
+# Activate .venv before continuing.
+python -m pip install numpy pandas matplotlib seaborn scikit-learn jupyter
+python -m jupyter notebook
+```
+
+Select `Customer Churn Prediction.ipynb` in Jupyter and review its configuration before executing cells in order.
+
+## Reproducibility notes
+
+The dataset is included as `customer_churn.csv`. Replace the notebook's machine-specific CSV path with that local filename before running. The inspected split uses `train_size=0.7` and `random_state=45`. Recompute evaluation metrics before drawing conclusions about the best model.
+
+Saved notebook outputs describe a prior execution; they are not an independently reproduced benchmark. Dependency versions are not locked, so compatibility may require adjustment.
+
+
+## Author
+
+[Naga Anweesh Reddy](https://github.com/Arjun1443/Naga-Anweesh-Reddy) · AI development and technical training
